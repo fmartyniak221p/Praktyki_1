@@ -5,7 +5,7 @@
 
     <VerticalStackLayout Padding="20" Spacing="10">
 
-        <Label Text="Wzornik kolorów RGB. Wykonał [Twój Numer]" 
+        <Label Text="Wzornik kolorów RGB. Wykonał [00000000000]" 
                HorizontalOptions="Center" />
 
         <BoxView x:Name="DuzyProstokat"
