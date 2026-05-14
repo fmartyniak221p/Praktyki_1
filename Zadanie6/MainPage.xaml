@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp14.MainPage" BackgroundColor="#F5F5DC">
+    
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*">
+
+        <Label Grid.Row="0"
+               Text="Gra w kości. Autor 00000000000" 
+               BackgroundColor="#A52A2A" 
+               TextColor="White" 
+               FontSize="28" 
+               HorizontalTextAlignment="Center" 
+               Padding="10" 
+               Margin="0,0,0,10" />
+
+        <Button Grid.Row="1"
+                Text="RZUĆ KOŚĆMI" 
+                BackgroundColor="#D2691E" 
+                TextColor="White"
+                Clicked="OdrzucKoscmiKlikniete"
+                HorizontalOptions="Center"
+                Margin="10" />
+
+        <Grid Grid.Row="2" 
+              BackgroundColor="White" 
+              HeightRequest="80" 
+              ColumnDefinitions="*, *, *, *, *" 
+              Padding="5" 
+              Margin="0,10">
+
+            <Image Grid.Column="0" x:Name="ObrazKosci1" Source="question.jpg" HeightRequest="60" Margin="9" />
+            <Image Grid.Column="1" x:Name="ObrazKosci2" Source="question.jpg" HeightRequest="60" Margin="9" />
+            <Image Grid.Column="2" x:Name="ObrazKosci3" Source="question.jpg" HeightRequest="60" Margin="9" />
+            <Image Grid.Column="3" x:Name="ObrazKosci4" Source="question.jpg" HeightRequest="60" Margin="9" />
+            <Image Grid.Column="4" x:Name="ObrazKosci5" Source="question.jpg" HeightRequest="60" Margin="9" />
+        </Grid>
+
+        <Label Grid.Row="3"
+               x:Name="NapisWynikLosowania" 
+               Text="Wynik tego losowania: 0" 
+               FontSize="18" 
+               TextColor="Black"
+               HorizontalOptions="Center" 
+               Margin="10" />
+
+        <Label Grid.Row="4"
+               x:Name="NapisWynikGry" 
+               Text="Wynik gry: 0" 
+               FontSize="18" 
+               TextColor="Black"
+               HorizontalOptions="Center" 
+               Margin="10" />
+
+        <Button Grid.Row="5"
+                Text="RESETUJ WYNIK" 
+                BackgroundColor="#D2691E" 
+                TextColor="White"
+                Clicked="OnResetujWynikKlikniete"
+                HorizontalOptions="Center"
+                Margin="10" />
+
+    </Grid>
+</ContentPage>
