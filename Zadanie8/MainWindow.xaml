@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MojeDźwięki, Wykonał: 00000000000" 
+        Background="#2E8B57" 
+        WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Button x:Name="btnPoprzedni" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,115,40,40" Width="96" Height="70" Click="BtnPoprzedni_Click">
+            <Image x:Name="imgPoprzedni" Stretch="Uniform"/>
+        </Button>
+
+        <Image x:Name="pbPlyta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,40,0,0" Width="180" Height="180" Stretch="Uniform"/>
+
+        <TextBlock x:Name="lblLiczbaPobran" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,260,0,0" Width="180" FontSize="20" Foreground="#61D918" TextAlignment="Center"/>
+
+        <Button x:Name="btnNastepny" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="800,115,0,0" Width="96" Height="70" Click="BtnNastepny_Click">
+            <Image x:Name="imgNastepny" Stretch="Uniform"/>
+        </Button>
+
+        <TextBlock x:Name="lblWykonawca" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,40,0,0" Width="480" FontSize="50" Foreground="White"/>
+
+        <TextBlock x:Name="lblTytul" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,120,0,0" Width="480" FontSize="30" FontStyle="Italic" Foreground="White"/>
+
+        <TextBlock x:Name="lblLiczbaUtworow" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,185,0,0" Width="180" FontSize="20" Foreground="#61D918"/>
+
+        <TextBlock x:Name="lblRokWydania" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="520,185,0,0" Width="100" FontSize="20" Foreground="#61D918"/>
+
+        <Button x:Name="btnPobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330,245,0,0" Width="150" Height="45" Content="Pobierz" Background="#61D918" Foreground="Black" FontSize="20" FontWeight="Bold" Click="BtnPobierz_Click"/>
+    </Grid>
+</Window>
